@@ -1,5 +1,5 @@
 # BRVM Quant Projects
-**Auteur : Anges Zinsou Aguiah** | Portfolio Manager | CFA Candidate
+**Auteur : Anges Aguiah** | Portfolio Manager | CFA Candidate
 
 Projets quantitatifs appliqués aux marchés financiers de la BRVM et de la zone UEMOA.
 
