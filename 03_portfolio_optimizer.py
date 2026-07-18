@@ -1,20 +1,10 @@
-"""
-01_data_prep.py — Projet 03 : Portfolio Optimizer (brvm-quant-projects)
- 
-Rôle de ce module :
-    1. Charger brvm_historique_ALL.csv (format long : Ticker, Date, OHLC, Volume)
-    2. Calculer des statistiques par ticker (nb d'observations, volume médian, date de départ)
-    3. Séparer l'univers en "inclus" / "exclu" selon deux seuils (historique, liquidité)
-       -> les exclus ne sont PAS supprimés, ils sont tracés dans un fichier séparé
-          pour une analyse de robustesse ultérieure (cf. décision méthodologique)
-    4. Aligner les tickers inclus sur leurs dates communes (intersection stricte,
-       pas de forward-fill — cf. discussion sur le biais de non-synchronicité)
-    5. Calculer les log-rendements sur la base des prix alignés
-    6. Sauvegarder : prix alignés, rendements, univers exclu, rapport de synthèse
- 
-Convention : les seuils sont centralisés en haut du fichier. Ils migreront vers
-config.yaml une fois validés empiriquement sur plusieurs runs.
-"""
+# ============================================
+# PROJET 03 — PORTFOLIO OPTIMIZER BRVM
+# Stratégie : Optimisation Moyenne-Variance
+#             (Bayes-Stein + Ledoit-Wolf + Frontière Efficiente)
+# Auteur : Anges Aguiah
+# Date : Juillet 2026
+# ============================================
  
 import pandas as pd
 import numpy as np
